@@ -15,8 +15,8 @@ RUN apt-get update && \
     apt-get -qy autoremove && \
 # Add user jenkins to the image
     adduser --quiet jenkins && \
-# Set password for the jenkins user (you may want to alter this).
-    echo "slavejenkins:slave@2020" | chpasswd && \
+# Set password for the jenkinsi
+    echo "jenkins:Slave2020" | chpasswd && \
     mkdir /home/jenkins/.m2
 
 # Copy authorized keys
